@@ -128,20 +128,20 @@
 	</div>-->
 	<div class="category">
 		<ul>
-			<li>食べ物</li>
-			<li>温泉、入浴施設</li>
-			<li>歴史、文化</li>
-			<li>自然</li>
-			<li>全て</li>
+			<li><a href=".tabe">食べ物</a></li>
+			<li><a href="onsen">温泉、入浴施設</a></li>
+			<li><a href="rekisi">歴史、文化<a></li>
+			<li><a href="sizen">自然</a></li>
+			<li><a href="all">全て</a></li>
 		</ul>
 	</div>
 	<div class="wrap-event-1">
 	<div class="category-a">
-		<p>食べ物</p>
-		<p>温泉、入浴施設</p>
-		<p>歴史、文化</p>
-		<p>自然</p>
-		<p>全て</p>
+		<p class="tabe">食べ物</p>
+		<p class="onsen">温泉、入浴施設</p>
+		<p class="rekisi">歴史、文化</p>
+		<p class="sizen">自然</p>
+		<p class="all">全て</p>
 		<ul>
 			<li>
 				<a href="#">
