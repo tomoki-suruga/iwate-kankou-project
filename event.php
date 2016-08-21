@@ -356,7 +356,7 @@
 	</div>
 	</div>
 </div>
-
+<?php ?>
 	<div class="site-map">
 	</div>
 	<div class="copy-right">
