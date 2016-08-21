@@ -3,8 +3,9 @@
 $db = mysqli_connect('localhost','root','root','tomonavi') or
 die(mysql_connect_error());
 mysqli_set_charset($db,'utf8');
-$recodSet = mysqli_query($db,'SELECT * FROM event');
+$recodSet = mysqli_query($db,'SELECT * FROM spot');
 ?>
+
 
 <!DOCTYPE HTML>
 <html>
@@ -113,10 +114,10 @@ $recodSet = mysqli_query($db,'SELECT * FROM event');
 	<div class="wrap-event">
 
 	<div class="top-img-2">
-		<img src="img/event_img.jpg">
+		<img src="img/spot_img.jpg">
 		<div class="top-image-2-text">
-		<p>EVENT</p>
-		<p class="top-image-2-text-2">イベント情報</p>
+		<p>SPOT</p>
+		<p class="top-image-2-text-2">スポット情報</p>
 		</div>
 	</div>
 	<!--<div class="jouken-kensaku">
@@ -136,45 +137,39 @@ $recodSet = mysqli_query($db,'SELECT * FROM event');
 	</div>-->
 	<div class="category">
 		<ul>
-			<li><a href="maturi">お祭り</a></li>
-			<li><a href="art">アート、音楽</a></li>
-			<li><a href="leisure">レジャー<a></li>
-			<li><a href="gourmet">グルメ</a></li>
-			<li><a href="all">全て</a></li>
+			<li>食べ物</li>
+			<li>温泉、入浴施設</li>
+			<li>歴史、文化</li>
+			<li>自然</li>
+			<li>全て</li>
 		</ul>
 	</div>
 	<div class="wrap-event-1">
-	<div class="category-b">
-		<p class="maturi">お祭り</p>
-		<p class="art">アート、音楽</p>
-		<p class="leisure">レジャー</p>
-		<p class="ourmet">グルメ</p>
-		<p class="all">全て</p>
+	<div class="category-a">
+		<p>食べ物</p>
+		<p>温泉、入浴施設</p>
+		<p>歴史、文化</p>
+		<p>自然</p>
+		<p>全て</p>
 		<ul>
-
-		<?php while($date = mysqli_fetch_assoc($recodSet)){ ?>
-			<li class="<?php echo $date['class'] ?> event-a">
+			<?php while($date = mysqli_fetch_assoc($recodSet)){ ?>
+			<li class="<?php echo $date['class'] ?>">
 				
 				<a href="spot=?<?php echo $date['id'] ?>">
-					<img src="img/<?php echo $date['picture'] ?>">
-					<div class="event-b">
-						<p class="cat-title"><?php echo $date['name'] ?></p>
-						<p class="cat-time"><?php echo $date['open'] ?>〜<?php echo $date['end'] ?></p>
-						<p class="cat-area"><?php echo $date['add_si'] ?></p>
-						<p class="category-b-text"><?php echo $date['text'] ?></p>
-						<p class="spot-more"><span>more</span></p>
-					</div>
+					<img src="img/<?php echo $date['picture'] ?>"><p class="cat-title"><?php echo $date['name'] ?></p>
+					<p class="cat-text"><?php echo $date['text'] ?></p>
+					<p class="spot-more"><span>more</span></p>
 				</a>
 
 			</li>
 		<?php	}?>
-
 		</ul>
 	</div>
 
 	</div>
 	</div>
 </div>
+
 	<div class="site-map">
 	</div>
 	<div class="copy-right">
