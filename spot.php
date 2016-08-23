@@ -137,20 +137,20 @@ $recodSet = mysqli_query($db,'SELECT * FROM spot');
 	</div>-->
 	<div class="category">
 		<ul>
-			<li>食べ物</li>
-			<li>温泉、入浴施設</li>
-			<li>歴史、文化</li>
-			<li>自然</li>
-			<li>全て</li>
+			<li><span id="tabe">食べ物</span></li>
+			<li><span id="onsen">温泉</span></li>
+			<li><span id="rekisi">歴史、文化</span></li>
+			<li><span id="sizen">自然</span></li>
+			<li><span id="all">全て</span></li>
 		</ul>
 	</div>
 	<div class="wrap-event-1">
 	<div class="category-a">
-		<p>食べ物</p>
-		<p>温泉、入浴施設</p>
-		<p>歴史、文化</p>
-		<p>自然</p>
-		<p>全て</p>
+		<p class="tabe tabu">食べ物</p>
+		<p class="onsen tabu">温泉、入浴施設</p>
+		<p class="rekisi tabu">歴史、文化</p>
+		<p class="sizen tabu">自然</p>
+		<p class="all">全て</p>
 		<ul>
 			<?php while($date = mysqli_fetch_assoc($recodSet)){ ?>
 			<li class="<?php echo $date['class'] ?>">

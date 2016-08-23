@@ -752,18 +752,27 @@ text-align:center;}
 
 .category ul{list-style:none;
 text-align:center;
+
 }
 .category li{float:left;
 width:20%;
+border:3px solid #edf0ef;
+}
+.category li span{display:block;
+color:#fff;
 padding-top:20px;
 padding-bottom:20px;
+font-size:20px;
 background:#fa9292;
 color:#fff;
-font-size:20px;
-border:2px solid #edf0ef;
+border-bottom:5px solid #da7272;
+border-right:1px solid #da7272;
+border-radius:8px;
+box-shadow:5px 5px 5px 5px #fff inset;
+box-shadow:0px 1px 3px 0px #999;
 }
-.category li a{display:block;
-color:#fff;}
+.category li span:hover{background:#faa2a2;}
+
 .category ul:after {
   content: "";
   display: block;
@@ -771,7 +780,8 @@ color:#fff;}
 }
 .category-a>p{text-align:center;
 font-size:30px;
-margin-top:30px;}
+margin-top:30px;
+margin-bottom:30px;}
 
 .category-a>p:after{content:"";
 display:block;
@@ -832,7 +842,8 @@ border-radius:5px;}
 
 .category-b>p{text-align:center;
 font-size:30px;
-margin-top:30px;}
+margin-top:30px;
+margin-bottom:30px;}
 
 .category-b>p:after{content:"";
 display:block;
@@ -899,6 +910,11 @@ font-size:45px;
 }
 .wrap-shousai-2{text-align:center;}
 
+
+/*************************タブ*********************************/
+.tabu{display:none;}
+.select{background:#edf0ef;
+color:#fa9292;}
 /*************************400*********************************/
 @media (max-width:400px){
 
@@ -928,8 +944,36 @@ time{font-size:8px}
     height: 20px;
 }
 .iroiro li a img{object-position:0px 0px;}
-}
 
+}
+@media (max-width:500px){
+.category-a li{float:none;
+width:97%;
+margin:20px 1.5%;
+height:400px;
+}
+.cat-text{width:100%}
+.category-b li{float:none;
+width:97%;
+height:220px;
+}
+.category-b-text{width:100%;}
+.category li span{font-size:12px;}	
+}
+@media (min-width:500px) and (max-width:768px) {
+/****************** タブ *******************************/
+
+.category-b li{float:none;
+width:97%;
+height:220px;
+}
+.category-b-text{width:100%;}	
+.category-a li{float:left;
+width:47%;
+margin:20px 1.5%;
+height:400px;
+}
+}
 /*************************600*********************************/
 @media (max-width:600px)and(min-width:400px){
 .osirase-text{width:500px;}}
@@ -1196,7 +1240,8 @@ padding:15px;}
 	height:200px;
 	border-radius:50px;}
 
-.wid,.wid-1,.copy-right{width:100%;
+/****************** width *******************************/
+.wid,.wid-1,.copy-right,.wrap-event-1{width:100%;
 
 margin:0 auto;}
 
