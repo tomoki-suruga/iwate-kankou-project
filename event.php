@@ -136,19 +136,19 @@ $recodSet = mysqli_query($db,'SELECT * FROM event');
 	</div>-->
 	<div class="category">
 		<ul>
-			<li><a href="maturi">お祭り</a></li>
-			<li><a href="art">アート、音楽</a></li>
-			<li><a href="leisure">レジャー<a></li>
-			<li><a href="gourmet">グルメ</a></li>
-			<li><a href="all">全て</a></li>
+			<li><span id="maturi">お祭り</span></li>
+			<li><span  id="art">アート、音楽</span></li>
+			<li><span  id="leisure">レジャー</span></li>
+			<li><span  id="gourmet">グルメ</span></li>
+			<li><span  id="all">全て</span></li>
 		</ul>
 	</div>
 	<div class="wrap-event-1">
 	<div class="category-b">
-		<p class="maturi">お祭り</p>
-		<p class="art">アート、音楽</p>
-		<p class="leisure">レジャー</p>
-		<p class="ourmet">グルメ</p>
+		<p class="maturi tabu">お祭り</p>
+		<p class="art tabu">アート、音楽</p>
+		<p class="leisure tabu">レジャー</p>
+		<p class="gourmet tabu">グルメ</p>
 		<p class="all">全て</p>
 		<ul>
 
