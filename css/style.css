@@ -792,7 +792,8 @@ margin-top:7px;
 background:#fcef63;}
 
 .category-a ul{list-style:none;
-background:#edf0ef;}
+background:#edf0ef;
+padding-bottom:20px;}
 
 .category-a li{float:left;
 width:22%;
@@ -952,13 +953,14 @@ width:97%;
 margin:20px 1.5%;
 height:400px;
 }
+.cat-time{font-size:10px;}
 .cat-text{width:100%}
 .category-b li{float:none;
 width:97%;
-height:220px;
+height:150px;
 }
-.category-b-text{width:100%;}
 .category li span{font-size:12px;}	
+.category-b-text{display:none;}
 }
 @media (min-width:500px) and (max-width:768px) {
 /****************** タブ *******************************/
