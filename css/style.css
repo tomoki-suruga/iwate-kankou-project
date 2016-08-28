@@ -916,6 +916,90 @@ font-size:45px;
 .tabu{display:none;}
 .select{background:#edf0ef;
 color:#fa9292;}
+
+ul{list-style:none;}
+
+
+/*************************特産*********************************/
+.special-all{width:900px;
+margin:0 auto;}
+.special-con div{width:900px;
+margin:0 auto;}
+.special-top h2{font-size:40ぎょかくpx;
+font-family: 'Noto Serif', serif;
+color:#444;
+margin:50px 0;
+ }
+ .special-top p{font-size:16px;
+ 	font-weight:bold;
+ 	color:#666;
+ margin-bottom:50px;
+ border-radius:15px;
+border-right:4px solid #666;
+border-left:4px solid #666;}
+ .special-cate{
+ 	margin-bottom:80px;
+ }
+
+ .special-cate li{float:left;
+ font-weight:bold;
+margin:10px;
+}
+.special-cate li a{color:#222;
+	padding:5px;
+display:block;
+position:relative;}
+.special-cate li a i{position:absolute;
+left:0;
+top:25px;
+width:100%;
+text-align:center;}
+
+.special-cate li a:after{content:"";
+display:block;
+height:5px;
+width:0%;
+margin:0 auto;
+margin-top:-7px;
+background:#00af77;}
+.special-cate li a:hover i{transition-duration:0.2s;
+	padding-top:5px;}
+.special-cate li a:hover:after{width:100%;
+transition-duration:0.2s;}
+.special-cate ul{display:inline-block;
+padding:5px 70px 25px;
+background:#fff;
+border-radius:60px;
+box-shadow:0px 1px 3px 0px #999;}
+ .special-cate ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.special-img{height:auto;}
+.special-con{padding-bottom:80px;
+}
+.special-con div h3{font-size:35px;
+font-family: 'Noto Serif', serif;
+margin-top:50px;
+}
+.special-con div h3:after{content:"";
+display:block;
+height:8px;
+width:60px;
+margin:0 auto;
+margin-top:7px;
+background:#00af77;}
+.special-con-p{padding:30px;
+background:#fff;
+border-radius:10px;
+margin:30px 0;
+border:2px solid #aaa;}
+.special-con-v{font-size:12px;
+margin-bottom:30px;}
+.special-con div img{height:auto;}
+
+
 /*************************400*********************************/
 @media (max-width:400px){
 
@@ -947,6 +1031,7 @@ time{font-size:8px}
 .iroiro li a img{object-position:0px 0px;}
 
 }
+
 @media (max-width:500px){
 .category-a li{float:none;
 width:97%;
@@ -961,6 +1046,7 @@ height:150px;
 }
 .category li span{font-size:12px;}	
 .category-b-text{display:none;}
+
 }
 @media (min-width:500px) and (max-width:768px) {
 /****************** タブ *******************************/
