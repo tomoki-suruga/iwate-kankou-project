@@ -1,9 +1,7 @@
-
 <?php
-$db = mysqli_connect('localhost','root','root','tomonavi') or
-die(mysql_connect_error());
-mysqli_set_charset($db,'utf8');
-$recodSet = mysqli_query($db,'SELECT * FROM event');
+//$db = mysqli_connect('localhost','root','root','tomonavi') or
+//die(mysql_connect_error());
+//$recodSet = mysqli_query($db,'SELECT * FROM event');
 ?>
 
 <!DOCTYPE HTML>
@@ -28,7 +26,7 @@ $recodSet = mysqli_query($db,'SELECT * FROM event');
       var parts = url.split("#");
       var target = parts[1];
       var target_offset = $("#"+target).offset();
-      var target_top = target_offset.top;
+      var target_top = target_offset.top-100;
       $('html, body').animate({scrollTop:target_top}, 500);
       });
     });
@@ -173,40 +171,30 @@ $recodSet = mysqli_query($db,'SELECT * FROM event');
 
 				</div>
 			</div>
-			<img id="re-men" class="special-img" src="img/nanbu-t.jpg">
+			<img id="re-men" class="special-img" src="img/reimen.jpg">
 			<div class="special-con">
 				<div>
 					<h3>盛岡冷麺</h3>
-					<p class="special-con-p">「南部鉄器」は岩手県盛岡市と奥州市水沢区で生産されている鉄器の総称です。<br>
-旧南部領の盛岡と旧伊達領の水沢では、それぞれに異なる鋳物の歴史を持ちます。<br>
-両産地では日本各地から呼びよせられた、鋳物師（いもじ）や茶釜職人達によって、<br>
-鉄瓶、鍋、釜以外にも、梵鐘や仏像から燈籠や大砲まで、様々な鋳物の製造が行われていました</p>
-<iframe src="https://player.vimeo.com/video/72805097?title=0&byline=0&portrait=0" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p class="special-con-v"><a href="https://vimeo.com/72805097">東北STANDARD 05 岩手県 南部鉄器</a> from <a href="https://vimeo.com/tohokustandard">東北STANDARD</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-<img class="special-img" src="img/nanbuteki.jpg">
-					<p class="special-con-p">南部鉄器は17世紀中頃、南部藩が盛岡市に京都から釜師を招いて茶の湯釜を作らせたのが始まりと言われています。<br>盛岡には古くから砂鉄などの良質な鉄資源に恵まれたことで、その頃から鉄器が製造されてきました。<br>
-現在では様々な鉄器が製造されていますが、伝統工芸品の指定を受けた岩手県の盛岡市、<br>水沢市で作られているものが南部鉄器と称されています。機能性があり重厚で伝統的なものから、<br>時代の流れを受けモダンでカラフルなデザインも多く作られ、南部鉄器の可能性をさらに広げています。</p>
+					<p class="special-con-p">盛岡冷麺（もりおかれいめん）は、岩手県盛岡市の名物麺料理で辛味のある冷麺です。わんこそば、じゃじゃ麺と並んで「盛岡の三大麺」と称されています。一般的に「冷麺」というとこれを指す事が多く、主に焼肉店での定番として供されることが多いです。</p>
+<img class="special-img" src="img/reimennoshasin.jpg">
+					<p class="special-con-p">冷麺は当初、コシの強い麺を食べ慣れない盛岡の人たちから「ゴムのようでかみ切れない」と酷評されました。しかし次第に、「あの食感や味が忘れられない」「一度食べたらクセになる」と何度も店に足を運ぶ人たちも出始めました。盛岡冷麺の麺は、コシが強く、表面はツルッと喉ごしが良いのが特徴です。
+一方、牛骨に鶏ガラを加えてだしをとるスープは、和食のだしにはない、コクや旨みがたっぷり。しかも冷たいスープなので、麺のコシの強さをいっそう堪能することができます。。</p>
 				
 				<p class="itiran"><a href="#">spot 一覧　<i class="fa fa-angle-double-right" aria-hidden="true"></i></a></p>
 
 				</div>
 			</div>
-			<img id="maesawa" src="img/hidehira.jpg">
+			<img id="maesawa" src="img/maesawagyu.jpg">
 			<div class="special-con">
 				<div>
 					<h3>前沢牛</h3>
-					<p class="special-con-p">「秀衡塗」の呼び名は中尊寺（平泉町）や、その周辺に伝わる「秀衡椀」がもととなります。<br>
-藤原秀衡の時代に金色堂造営のために、京都から招いた工人達によってつくられた、<br>
-豪華絢爛の金色の椀が「秀衡椀」の起源であると伝えられています。<br>
-源氏雲や吉祥などの紋様に、菱形の金箔が施されたものが伝統的な意匠で、黒・朱・金が基調となっています。</p>
-<iframe src="https://player.vimeo.com/video/74604524?title=0&byline=0&portrait=0" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p class="special-con-v"><a href="https://vimeo.com/74604524">東北STANDARD 06 岩手県 秀衡塗</a> from <a href="https://vimeo.com/tohokustandard">東北STANDARD</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-		<img class="special-img" src="img/hidehiranuri.jpg">
+					<p class="special-con-p">前沢牛は、日本三大和牛にも数えられる牛肉です。肉の芸術品にも例えられる極上の肉質は、前沢産の良質な稲わらや水のきれいな大地で育った干草、穀類を飼料として与えるとともに、ストレスをかけない環境づくりや１頭１頭愛情豊かに飼育することによって生み出されています</p>
+		<img class="special-img" src="img/maesawano.jpg">
 
-					<p class="special-con-p">遠く平安の末期、奥州平泉に絢爛たる文化をもたらした藤原秀衡が京より職人を招来し、<br>
-この地方特産の良質な漆と金をふんだんに使い、「器」を 造らせたのが起源とされています。<br>秀衡塗は幾多の歴史の変遷・興亡の中にあって、この土地の工人達によって造り継がれてきました。<br>
-ふっくらと手になじみ雅趣に富む形体は、現代の生活にも調和して使う人の心をなごませるものがあります。<br>
-昭和60年、伝統工芸品の指定も受け、歴史と伝統の中にその「技」と「美」は今も脈々と受け継がれています。</p>
+					<p class="special-con-p">前沢牛は、上質できめ細やかな霜降りで、肉質が抜群に良く、包丁を入れたときの肉のしっとり感がなんともいえない手ごたえなんです。
+また、ロースに指を乗せると自然と沈んでいきます。これは脂の質がすばらしい証拠で、食したときに肉が溶けるようにやわらかく感じます。
+前沢牛は香りもすばらしい。下味をして焼くと、上等なバターの香りがたちあがります。この瞬間は料理人として幸せを感じますね。
+生産者の皆さんが丹精込めて育て上げた前沢牛、できるだけシンプルな味付けで素材そのものの風味を味わっていただきたいですね。</p>
 				
 				<p class="itiran"><a href="#">spot 一覧　<i class="fa fa-angle-double-right" aria-hidden="true"></i></a></p>
 
