@@ -1,3 +1,21 @@
+
+<?php
+$db = mysqli_connect('localhost','root','root','tomonavi') or
+die(mysql_connect_error());
+mysqli_set_charset($db,'utf8');
+	if(empty($_REQUEST['id'])){
+		header('Location: index.php');
+		exit();
+		}
+	$sql = sprintf('SELECT * FROM event WHERE id=%d',
+		mysqli_real_escape_string($db,$_REQUEST['id'])
+	);
+	
+	$posts = mysqli_query($db,$sql) or die(mysqli_error($db));
+
+	$recodSet = mysqli_query($db,'SELECT * FROM event ORDER BY id DESC');
+?>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -101,34 +119,61 @@
 		</div>
 		</div>
 
-<div class="wrap">
-	<div class="wrap-shousai">
-		<p class="wrap-shousai-1">SPOT</p>
-		<p class="wrap-shousai-2">スポット情報</p>
-	<!--<div class="jouken-kensaku">
-		<ul>
-			<li><a href="#">条件から検索</a>
-				<div class="jouken">
-					<form></form>
-				</div>
-			</li>
-			<li><a href="#">MAPから検索</a>
-				<div class="map-ken">
-					<form></form>
-				</div>
+
+	
+<div class="wrap"><div class="shousai-all">
+	<div class="shousai">
+		<p class="shousai-top">EVENTの詳細</p>
+		<div class="shousai-content">
+		<?php if($post = mysqli_fetch_assoc($posts)):?> 
+			<div class="shousai-content-title">
+				<h2><?php echo htmlspecialchars($post['name'],ENT_QUOTES,'UTF-8');?></h2>
+				<p class="si"> <?php echo htmlspecialchars($post['add_si'],ENT_QUOTES,'UTF-8');?> </p>
+				<p class="ki-wa-do"> <?php echo htmlspecialchars($post['keyword'],ENT_QUOTES,'UTF-8');?> </p>
+			</div>
+			<img src="img/<?php echo htmlspecialchars($post['picture'],ENT_QUOTES,'UTF-8');?>">
+			<p><?php echo htmlspecialchars($post['text'],ENT_QUOTES,'UTF-8');?></p>
+			<div class="information">
+				<p>INFORMATION</p>
+				<div class="table">
+				<table>
+					
+					<tr class="table-top">
+						<td>住所</td><td><?php echo htmlspecialchars($post['address'],ENT_QUOTES,'UTF-8');?></td>
+					</tr>
+					<tr>
+						<td>電話番号</td><td><?php echo htmlspecialchars($post['tel'],ENT_QUOTES,'UTF-8');?></td>
+					</tr>
+					<tr>
+						<td>ホームページ</td><td><?php echo htmlspecialchars($post['hp'],ENT_QUOTES,'UTF-8');?></td>
+					</tr>
+			</table>
+			<?php echo htmlspecialchars($post['map'],ENT_QUOTES,'UTF-8');?>
+		</div>
+			</div>
+	<?php endif;?>
+		</div>
+		<div class="shousai-more">
+			<p class="shousai-more-p">関連スポット</p>
+			<ul><?php while($table = mysqli_fetch_assoc($recodSet)){?>
+				<li class="<?php echo htmlspecialchars($table['class'],ENT_QUOTES,'UTF-8');?>">
+
+				<a href="spot=?<?php echo htmlspecialchars($table['id'],ENT_QUOTES,'UTF-8');?>">
+					<img src="img/<?php echo htmlspecialchars($table['picture'],ENT_QUOTES,'UTF-8');?>">
+					<p class="cat-title"><?php echo htmlspecialchars($table['name'],ENT_QUOTES,'UTF-8');?></p>
+					<p class="cat-text"><?php echo htmlspecialchars($table['text'],ENT_QUOTES,'UTF-8');?></p>
+					<p class="spot-more"><span>more</span></p>
+				</a>
 
 			</li>
-		</ul>
-	</div>-->
+			<?php }?>
+			</ul>
+		</div>
+		
+	</div>
 
-	<div class="wrap-event-1">
-	<div class="category-a">
 
-	</div>
-	</div>
-	</div>
 </div>
-
 	<div class="site-map">
 	</div>
 	<div class="copy-right">
@@ -144,7 +189,7 @@
 	</div>
 
 </div>
-
+</div>
 </div>
 <footer>
 

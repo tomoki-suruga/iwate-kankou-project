@@ -1,7 +1,7 @@
 <?php
-//$db = mysqli_connect('localhost','root','root','tomonavi') or
-//die(mysql_connect_error());
-//$recodSet = mysqli_query($db,'SELECT * FROM event');
+$db = mysqli_connect('localhost','root','root','tomonavi') or
+die(mysql_connect_error());
+$recodSet = mysqli_query($db,'SELECT * FROM event');
 ?>
 
 <!DOCTYPE HTML>

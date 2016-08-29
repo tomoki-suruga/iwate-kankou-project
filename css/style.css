@@ -1002,6 +1002,82 @@ margin-bottom:30px;}
 .onsenno{margin-top:40px;}
 .iframe-img{width:900px;
 height:500px;}
+/*************************詳細ページ*********************************/
+.shousai{padding-top:150px;
+text-align:center;
+width:1100px;
+margin:0 auto;
+}
+.shousai-all{background:#edf0ef;}
+.shousai:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.shousai div{float:left;}
+.shousai-content{width:70%;
+	padding:30px;
+border-radius:10px;
+background:#fff;}
+.shousai-more{width:30%;}
+.shousai-top{font-size:35px;
+font-family: 'Noto Serif', serif;
+margin-bottom:50px;}
+.shousai-top:after{    content: "";
+    display: block;
+    height: 8px;
+    width: 60px;
+    margin: 0 auto;
+    margin-top: 7px;
+    background: #00af77;}
+.shousai-more li{margin-left:20px;
+margin-bottom:10px;
+background:#fff;
+border-radius:10px;
+}
+.shousai-more li a{padding:10px;
+display:block;}
+.shousai-more li a .cat-text{width:100%;}
+.shousai-content-title{padding-left:60px;}
+.shousai-content-title h2{font-size:30px;}
+.shousai-content-title .si{font-size:16px;
+text-align:left;
+color:#20cf97;
+font-weight:bold;}
+.shousai-content-title .ki-wa-do{font-size:14px;
+text-align:left;}
+.information{background:#dff8f5;
+width:100%;
+border-radius:5px;
+padding:20px;
+position:relative;
+margin-top:30px;}
+.information p{font-size:25px;
+position:absolute;
+margin-top:20px;
+height:40px;
+top:15px;
+left:50%;
+width:240px;
+margin-left:-120px;
+background:#dff8f5;
+color:#00af77;
+}
+
+.information .table{width:100%;
+margin-top:30px;
+text-align:left;
+border-top:3px solid #00af77;
+padding-top:70px;
+}
+.information .table table{width:100%;}
+.shousai-more-p{font-size:20px;
+border-top:3px solid #bbb;
+margin-left:20px;
+padding:15px 0;
+font-weight:bold;
+color:#555;}
+.shousai-more li a{color:#555;}
 /*************************400*********************************/
 @media (max-width:400px){
 

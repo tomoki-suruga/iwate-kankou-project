@@ -149,7 +149,7 @@ $recodSet = mysqli_query($db,'SELECT * FROM event');
 旧南部領の盛岡と旧伊達領の水沢では、それぞれに異なる鋳物の歴史を持ちます。<br>
 両産地では日本各地から呼びよせられた、鋳物師（いもじ）や茶釜職人達によって、<br>
 鉄瓶、鍋、釜以外にも、梵鐘や仏像から燈籠や大砲まで、様々な鋳物の製造が行われていました</p>
-<iframe src="https://player.vimeo.com/video/72805097?title=0&byline=0&portrait=0" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe class="iframe-img" src="https://player.vimeo.com/video/72805097?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p class="special-con-v"><a href="https://vimeo.com/72805097">東北STANDARD 05 岩手県 南部鉄器</a> from <a href="https://vimeo.com/tohokustandard">東北STANDARD</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 <img src="img/nanbuteki.jpg">
 					<p class="special-con-p">南部鉄器は17世紀中頃、南部藩が盛岡市に京都から釜師を招いて茶の湯釜を作らせたのが始まりと言われています。<br>盛岡には古くから砂鉄などの良質な鉄資源に恵まれたことで、その頃から鉄器が製造されてきました。<br>
@@ -167,7 +167,7 @@ $recodSet = mysqli_query($db,'SELECT * FROM event');
 藤原秀衡の時代に金色堂造営のために、京都から招いた工人達によってつくられた、<br>
 豪華絢爛の金色の椀が「秀衡椀」の起源であると伝えられています。<br>
 源氏雲や吉祥などの紋様に、菱形の金箔が施されたものが伝統的な意匠で、黒・朱・金が基調となっています。</p>
-<iframe src="https://player.vimeo.com/video/74604524?title=0&byline=0&portrait=0" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe class="iframe-img" src="https://player.vimeo.com/video/74604524?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p class="special-con-v"><a href="https://vimeo.com/74604524">東北STANDARD 06 岩手県 秀衡塗</a> from <a href="https://vimeo.com/tohokustandard">東北STANDARD</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 		<img src="img/hidehiranuri.jpg">
 
