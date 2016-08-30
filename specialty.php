@@ -1,6 +1,6 @@
 
 <?php
-$db = mysqli_connect('localhost','root','root','tomonavi') or
+$db = mysqli_connect('localhost','root','','tomonavi') or
 die(mysql_connect_error());
 mysqli_set_charset($db,'utf8');
 $recodSet = mysqli_query($db,'SELECT * FROM event');

@@ -855,14 +855,13 @@ margin-top:7px;
 background:#fcef63;}
 
 .category-b ul{list-style:none;
-background:#edf0ef;}
+background:#edf0ef;
+padding-bottom:15px;}
 
 .category-b li{float:left;
 width:47%;
 margin:20px 1.5%;
-height:220px;
 background:#fff;
-padding:10px;
 }
 .event-b{
 float:left;
@@ -871,7 +870,18 @@ margin-left:5%;}
 .category-b li a{
 	color:#000;
 	display:block;
+	overflow:hidden;
+	height:220px;
+	padding:10px
 	}
+.category-b li a img{	
+	max-height:200px;
+	overflow:hidden;}
+.category-b li a:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 .category-b li a:hover{opacity:0.8;}
 .cat-title{font-size:20px;
 	padding-top:10px;
@@ -1048,10 +1058,10 @@ font-weight:bold;}
 text-align:left;}
 .information{background:#dff8f5;
 width:100%;
-border-radius:5px;
 padding:20px;
 position:relative;
-margin-top:30px;}
+margin-top:30px;
+margin-bottom:30px;}
 .information p{font-size:25px;
 position:absolute;
 margin-top:20px;
@@ -1070,7 +1080,17 @@ text-align:left;
 border-top:3px solid #00af77;
 padding-top:70px;
 }
-.information .table table{width:100%;}
+.information .table dl{width:100%;}
+.information .table dl dd{padding-left:170px;
+	padding-bottom:15px;}
+.information .table dl dt{float:left;
+	font-weight:bold;
+}
+.information .table:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 .shousai-more-p{font-size:20px;
 border-top:3px solid #bbb;
 margin-left:20px;
@@ -1078,6 +1098,20 @@ padding:15px 0;
 font-weight:bold;
 color:#555;}
 .shousai-more li a{color:#555;}
+.shousai-more li a img{border-radius:5px;}
+.information-map{margin-top:30px;
+margin-bottom:30px;}
+.shousai-back{font-size:20px;
+text-align:center;
+margin-top:20px;
+padding:15px;
+background:#fab2b2;
+color:#fff;
+display:block;
+font-weight:bold;}
+.shousai-content img{margin-top:20px;
+margin-bottom:20px;}
+.shousai-content iframe{width:100%;}
 /*************************400*********************************/
 @media (max-width:400px){
 
@@ -1117,11 +1151,12 @@ margin:20px 1.5%;
 height:400px;
 }
 .cat-time{font-size:10px;}
+
 .cat-text{width:100%}
 .category-b li{float:none;
 width:97%;
-height:150px;
 }
+.category-b li a{height:150px;}
 .category li span{font-size:12px;}	
 .category-b-text{display:none;}
 .special-all{width:95%;
@@ -1139,6 +1174,10 @@ height:250px;}
  .special-top p{font-size:12px;}
  .special-con-p{font-size:12px;}
  .special-top h2{margin-top:0;}
+
+ .category-b li a img{	
+	max-height:130px;
+}
 }
 @media (min-width:500px) and (max-width:768px) {
 /****************** タブ *******************************/
@@ -1430,6 +1469,30 @@ padding:15px;}
 	height:200px;
 	border-radius:50px;}
 
+.shousai div{float:none;}
+.shousai-content{width:100%;
+	padding:30px;
+border-radius:10px;
+background:#fff;}
+.shousai-more{width:100%;}
+.shousai-top{font-size:35px;
+font-family: 'Noto Serif', serif;
+margin-bottom:50px;}
+.shousai-more li{
+width:48%;
+margin-right:1%;
+margin-left:1%;
+float:left;
+border-radius:10px;
+}
+.shousai-more-p{margin-top:30px;}
+.shousai{padding-top:100px;
+text-align:center;
+width:100%;
+margin:0 auto;
+}
+.information .table dl dd{padding-left:0;}
+.information .table dl dt{float:none;}
 /****************** width *******************************/
 .wid,.wid-1,.copy-right,.wrap-event-1{width:100%;
 

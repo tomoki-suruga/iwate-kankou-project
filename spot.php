@@ -1,6 +1,6 @@
 
 <?php
-$db = mysqli_connect('localhost','root','root','tomonavi') or
+$db = mysqli_connect('localhost','root','','tomonavi') or
 die(mysql_connect_error());
 mysqli_set_charset($db,'utf8');
 $recodSet = mysqli_query($db,'SELECT * FROM spot');
@@ -155,7 +155,7 @@ $recodSet = mysqli_query($db,'SELECT * FROM spot');
 			<?php while($date = mysqli_fetch_assoc($recodSet)){ ?>
 			<li class="<?php echo $date['class'] ?>">
 				
-				<a href="spot=?<?php echo $date['id'] ?>">
+				<a href="spot-detail.php?id=<?php echo $date['id'] ?>">
 					<img src="img/<?php echo $date['picture'] ?>"><p class="cat-title"><?php echo $date['name'] ?></p>
 					<p class="cat-text"><?php echo $date['text'] ?></p>
 					<p class="spot-more"><span>more</span></p>
