@@ -1,7 +1,6 @@
 
 $(function(){
 
-
 	 	if($(window).width()>768){
 	 		$(".navi-ul-ul").addClass("active");
 	 	}else{$(".navi-nav").hide();}
@@ -86,12 +85,10 @@ $(function(){
             $(".leisure").show();
         } else if(tags == 'gourmet') {
             $(".gourmet").show();
-           } else if(tags == 'taiken') {
-            $(".art").show();
         } else if(tags == 'basu') {
-            $(".leisure").show();
-        } else if(tags == 'work') {
-            $(".gourmet").show();
+            $(".basu").show();
+        } else if(tags == 'taiken') {
+            $(".taiken").show();
         } else {
             $(".category-a li").show();
             $(".category-b li").show();

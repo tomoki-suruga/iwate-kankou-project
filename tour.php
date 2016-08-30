@@ -1,6 +1,6 @@
 
 <?php
-$db = mysqli_connect('localhost','root','','tomonavi') or
+$db = mysqli_connect('localhost','root','root','tomonavi') or
 die(mysql_connect_error());
 mysqli_set_charset($db,'utf8');
 $recodSet = mysqli_query($db,'SELECT * FROM tour');
@@ -12,8 +12,8 @@ $recodSet = mysqli_query($db,'SELECT * FROM tour');
 <meta charset="utf-8">
 <title>Travel　Iwate</title>
 <meta name="viewport" content="width=device-width">
-<link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/sanitize.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
 <link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Rancho' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
@@ -138,16 +138,16 @@ $recodSet = mysqli_query($db,'SELECT * FROM tour');
 		<ul>
 			<li><span  id="taiken">体験型</span></li>
 			<li><span  id="basu">バスツアー</span></li>
-			<li><span  id="work">街歩き</span></li>
 			<li><span  id="gourmet">グルメ</span></li>
+			<li><span  id="sizen">自然</span></li>
 			<li><span  id="all">全て</span></li>
 		</ul>
 	</div>
 	<div class="wrap-event-1">
 	<div class="category-b">
-		<p class="maturi tabu">お祭り</p>
-		<p class="art tabu">アート、音楽</p>
-		<p class="leisure tabu">レジャー</p>
+		<p class="taiken tabu">体験型</p>
+		<p class="basu tabu">バスツアー</p>
+		<p class="sizen tabu">自然</p>
 		<p class="gourmet tabu">グルメ</p>
 		<p class="all">全て</p>
 		<ul>
@@ -155,7 +155,7 @@ $recodSet = mysqli_query($db,'SELECT * FROM tour');
 		<?php while($date = mysqli_fetch_assoc($recodSet)){ ?>
 			<li class="<?php echo $date['class'] ?> event-a">
 				
-				<a href="tour=?<?php echo $date['id'] ?>">
+				<a href="tour-detail.php?id=<?php echo $date['id'] ?>">
 					<img src="img/<?php echo $date['picture'] ?>">
 					<div class="event-b">
 						<p class="cat-title"><?php echo $date['name'] ?></p>

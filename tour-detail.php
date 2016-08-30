@@ -1,19 +1,19 @@
 
 <?php
-$db = mysqli_connect('localhost','root','','tomonavi') or
+$db = mysqli_connect('localhost','root','root','tomonavi') or
 die(mysql_connect_error());
 mysqli_set_charset($db,'utf8');
 	if(empty($_REQUEST['id'])){
 		header('Location: index.php');
 		exit();
 		}
-	$sql = sprintf('SELECT * FROM event WHERE id=%d',
+	$sql = sprintf('SELECT * FROM tour WHERE id=%d',
 		mysqli_real_escape_string($db,$_REQUEST['id'])
 	);
 	
 	$posts = mysqli_query($db,$sql) or die(mysqli_error($db));
 
-	$recodSet = mysqli_query($db,'SELECT * FROM event ORDER BY id DESC LIMIT 2');
+	$recodSet = mysqli_query($db,'SELECT * FROM tour ORDER BY id DESC LIMIT 2');
 ?>
 
 <!DOCTYPE HTML>
@@ -123,7 +123,7 @@ mysqli_set_charset($db,'utf8');
 	
 <div class="wrap"><div class="shousai-all">
 	<div class="shousai">
-		<p class="shousai-top">EVENTの詳細</p>
+		<p class="shousai-top">TOURの詳細</p>
 		<div class="shousai-content">
 		<?php if($post = mysqli_fetch_assoc($posts)):?> 
 			<div class="shousai-content-title">
@@ -141,9 +141,10 @@ mysqli_set_charset($db,'utf8');
 						<dt>電話番号</dt><dd><?php echo htmlspecialchars($post['tel'],ENT_QUOTES,'UTF-8');?></dd>
 						<dt>ホームページ</dt><dd><?php echo htmlspecialchars($post['hp'],ENT_QUOTES,'UTF-8');?></dd>
 			</dl>
-			<?php echo htmlspecialchars($post['map'],ENT_QUOTES,'UTF-8');?>
+			
 		</div>
 			</div>
+			<?php echo ($post['map']);?>
 	<?php endif;?>
 		</div>
 		<div class="shousai-more">
@@ -151,7 +152,7 @@ mysqli_set_charset($db,'utf8');
 			<ul><?php while($table = mysqli_fetch_assoc($recodSet)){?>
 				<li class="<?php echo htmlspecialchars($table['class'],ENT_QUOTES,'UTF-8');?>">
 
-				<a href="spot=?<?php echo htmlspecialchars($table['id'],ENT_QUOTES,'UTF-8');?>">
+				<a href="tour-detail.php?id=<?php echo htmlspecialchars($table['id'],ENT_QUOTES,'UTF-8');?>">
 					<img src="img/<?php echo htmlspecialchars($table['picture'],ENT_QUOTES,'UTF-8');?>">
 					<p class="cat-title"><?php echo htmlspecialchars($table['name'],ENT_QUOTES,'UTF-8');?></p>
 					<p class="cat-text"><?php echo htmlspecialchars($table['text'],ENT_QUOTES,'UTF-8');?></p>
@@ -164,7 +165,7 @@ mysqli_set_charset($db,'utf8');
 		</div>
 		
 	</div>
-<p><a href="#" class="shousai-back">EVENT一覧に戻る</a></p>
+<p><a href="tour.php" class="shousai-back">TOUR一覧に戻る</a></p>
 
 </div>
 	<div class="site-map">
