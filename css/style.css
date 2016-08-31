@@ -5,14 +5,14 @@
 body{margin:0;
 font-family:'メイリオ','Hiragino Kaku Gothic Pro',sans-serif;
 }
-
+footer{padding:10px 0;
+background:#fff;}
 /*************************INDEX*********************************/
 
 /***************************top-navi******************************/
 .navi{background:#49b9cd;
 width:100%;
 height:120px;
-position:fixed;
 z-index:5555;}
 
 .tomo{display:inline-block;
@@ -33,6 +33,7 @@ left:0;
 height:190px;
 text-align:center;
 border-bottom:1px solid #999;
+z-index:9999;
 }
 
 .ul-text a{color:#000;
@@ -57,13 +58,12 @@ width:160px;
 padding:20px;
 margin-right:10px;
 }
-.wrap1{position:relative;}
+.wrap1{position:relative;
+}
 .navi-nav{
 margin-top:10px;
 	float:right;
-	position:fixed;
 	z-index:8888;
-	right:0;
 }
 .navi-nav nav{float:left;}
 
@@ -732,9 +732,10 @@ margin:0 auto;}
 /*************************event-page*********************************/
 .wrap-event{background:#edf0ef;}
 
-.top-img-2{padding-top:120px;
+.top-img-2{
 position:relative;
-text-align:center;}
+text-align:center;
+z-index:5;}
 .top-img-2 img{max-height:400px;}
 .top-image-2-text{
 		color:#fff;
@@ -938,7 +939,7 @@ margin:0 auto;}
 .special-top h2{font-size:40px;
 font-family: 'Noto Serif', serif;
 color:#444;
-margin:50px 0;
+padding:50px 0;
  }
  .special-top p{font-size:16px;
  	font-weight:bold;
@@ -1013,7 +1014,7 @@ margin-bottom:30px;}
 .iframe-img{width:900px;
 height:500px;}
 /*************************詳細ページ*********************************/
-.shousai{padding-top:150px;
+.shousai{padding-top:50px;
 text-align:center;
 width:1100px;
 margin:0 auto;
@@ -1112,6 +1113,8 @@ font-weight:bold;}
 .shousai-content img{margin-top:20px;
 margin-bottom:20px;}
 .shousai-content iframe{width:100%;}
+.table dd{width:100%;
+word-break:break-all;}
 /*************************400*********************************/
 @media (max-width:400px){
 
@@ -1178,6 +1181,9 @@ height:250px;}
  .category-b li a img{	
 	max-height:130px;
 }
+
+.top-image-2-text{font-size:35px;}
+.top-image-2-text-2{font-size:18px;}
 }
 @media (min-width:500px) and (max-width:768px) {
 /****************** タブ *******************************/
@@ -1319,7 +1325,7 @@ overflow:hidden;
 .navi{position:static;}
 */
 
-
+.shousai-content-title{padding-left:10px;}
 .navi{
 	height:70px;
 }
@@ -1365,11 +1371,12 @@ margin-right:0px;
 .navi-ul-ul ul{width:100%;}
 .navi-nav{
 margin-top:0px;
-	position:static;
 	background:#124488;
+	position:static;
 }
 .navi-nav nav{float:none;
 margin-top:100px;
+overflow
 }
 
 .navi-nav nav>ul>li{
@@ -1486,7 +1493,7 @@ float:left;
 border-radius:10px;
 }
 .shousai-more-p{margin-top:30px;}
-.shousai{padding-top:100px;
+.shousai{padding-top:50px;
 text-align:center;
 width:100%;
 margin:0 auto;
@@ -1501,8 +1508,10 @@ margin:0 auto;}
 }
 @media (max-width:1000px) and (min-width:768px){
 .navi-nav{right:auto;
+position:absolute;
 left:200px;
-width:850px;}
+width:750px;
+}
 }
 @media (min-width:768px){
 	#menubtn{display:none;}

@@ -1,9 +1,9 @@
 
 $(function(){
 
-	 	if($(window).width()>768){
+	if($(window).width()>768){
 	 		$(".navi-ul-ul").addClass("active");
-	 	}else{$(".navi-nav").hide();}
+	 	}else{$(".navi-nav").css("position","fixed").css("right","-240px");}
 
 	 		$(".active").hide();
 			$("#dropdown li").hover(function(){
@@ -12,43 +12,105 @@ $(function(){
 			function(){
 				$(".active",this).stop().slideUp("fast");
 			});
-
+ 
 		$(window).resize(function(){
+			$(".wrap").css({'position':'static'});
 			if($(window).width()>768){
 				$(".navi-ul-ul").addClass("active");
 				$(".active").hide();
-				$(".navi-nav").show();
+				$(".navi-nav").css("position","");
+				
 		}else{$(".navi-ul-ul").show();
-			$(".navi-nav").hide();
+			$(".navi-nav").css("position","fixed").css("right","-240px")
 			$(".navi-ul-ul").removeClass("active");
 			}
 		});
 
 		$("#menubtn").click(function(){
 			
-			if($(".navi-nav").css("display")=="none"){
-				$(".navi-nav").show();
-			var wid=$(".navi-nav").width();
-			var hi=$(".navi-nav").height();
+			if($(".navi-nav").css("position")== "static" ){
+				$(".navi-nav").css("position","fixed");
 				$(".wrap").css({
-					'position':'absolute',
-					'left':-wid,
-					'height':hi,
-					'overflow':'hidden'
+					'position':'static'
 				});
 				//$(".navi").css("position","static");
 
 		}else{
-			$(".navi-nav").hide();
+			$(".navi-nav").css("position","static")
 			$(".wrap").css({
-					'position':'static',
-					'left':'0px',
-					'height':'auto',
-					'overflow':'auto'
+					'position':'fixed',
+					'left':'-240px'
 				});
 		}
-	});
+		});
 
+//ページ遷移時にたぶを開く
+	var urlHash = location.hash;
+     if(urlHash == '#-tabe') {
+     	$(".category-a>p").hide();
+	        $(".category-b>p").hide();
+	        $(".category-a li").hide();
+	        $(".category-b li").hide();
+            $(".tabe").show();
+        } else if(urlHash == '#-onsen') {
+        	$(".category-a>p").hide();
+	        $(".category-b>p").hide();
+	        $(".category-a li").hide();
+	        $(".category-b li").hide();
+            $(".onsen").show();
+        } else if(urlHash == '#-rekisi') {
+        	$(".category-a>p").hide();
+	        $(".category-b>p").hide();
+	        $(".category-a li").hide();
+	        $(".category-b li").hide();
+            $(".rekisi").show();
+        } else if(urlHash == '#-sizen') {
+        	$(".category-a>p").hide();
+	        $(".category-b>p").hide();
+	        $(".category-a li").hide();
+	        $(".category-b li").hide();
+            $(".sizen").show();
+        } else if(urlHash == '#-maturi') {
+        	$(".category-a>p").hide();
+	        $(".category-b>p").hide();
+	        $(".category-a li").hide();
+	        $(".category-b li").hide();
+            $(".maturi").show();
+        } else if(urlHash == '#-art') {
+        	$(".category-a>p").hide();
+	        $(".category-b>p").hide();
+	        $(".category-a li").hide();
+	        $(".category-b li").hide();
+            $(".art").show();
+        } else if(urlHash == '#-leisure') {
+        	$(".category-a>p").hide();
+	        $(".category-b>p").hide();
+	        $(".category-a li").hide();
+	        $(".category-b li").hide();
+            $(".leisure").show();
+        } else if(urlHash == '#-gourmet') {
+        	$(".category-a>p").hide();
+	        $(".category-b>p").hide();
+	        $(".category-a li").hide();
+	        $(".category-b li").hide();
+            $(".gourmet").show();
+        } else if(urlHash == '#-basu') {
+        	$(".category-a>p").hide();
+	        $(".category-b>p").hide();
+	        $(".category-a li").hide();
+	        $(".category-b li").hide();
+            $(".basu").show();
+        } else if(urlHash == '#-taiken') {
+        	$(".category-a>p").hide();
+	        $(".category-b>p").hide();
+	        $(".category-a li").hide();
+	        $(".category-b li").hide();
+            $(".taiken").show();
+        } else {
+            $(".category-a li").show();
+            $(".category-b li").show();
+            $(".all").show();
+        }
 //カテゴリーページの絞り込み
 	$(".category li span").click(function() {
         var tags = $(this).attr('id');
@@ -94,6 +156,14 @@ $(function(){
             $(".category-b li").show();
             $(".all").show();
         }
+    });
+
+    //スクロールトップ
+     $(".shousai-back").click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
     });
 
 	});
