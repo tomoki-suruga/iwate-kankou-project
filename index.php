@@ -109,9 +109,9 @@
 	<div class="osirase">
 		<p>お知らせ</p>
 		<div class="osirase-text">
-			<p><span>2016.06.08</span><a href="https://www.city.hanamaki.iwate.jp/shisetsu/801/804/p004010.html">河原の坊コースの通行止について</a></p>
-			<p><span>2016.06.21</span><a href="http://www.city.hanamaki.iwate.jp/event/1601/p006978.html">平成28年度花巻まつりの開催について</a></p>
-			<p><span>2016.06.21</span><a href="http://www.morioka-kokutai.jp/archives/15472">「いわてまるごとおもてなしパビリオンin盛岡」のステージイベント出演者を募集しています！</a></p>
+			<p><span>2016.06.08</span><a target="_blank" href="https://www.city.hanamaki.iwate.jp/shisetsu/801/804/p004010.html">河原の坊コースの通行止について</a></p>
+			<p><span>2016.06.21</span><a target="_blank" href="http://www.city.hanamaki.iwate.jp/event/1601/p006978.html">平成28年度花巻まつりの開催について</a></p>
+			<p><span>2016.06.21</span><a target="_blank" href="http://www.morioka-kokutai.jp/archives/15472">「いわてまるごとおもてなしパビリオンin盛岡」のステージイベント出演者を募集しています！</a></p>
 		</div>
 		<p class="osirase-itiran"><a href="#">お知らせ一覧</a></p>
 	</div>
@@ -184,7 +184,7 @@
 			<p class="content-title-2">一押し特集</p>
 				<ul class="content-list pickup">
 					<li>
-						<a href="#" class="pickup-1">
+						<a target="_blank" href="spot-detail.php?id=11" class="pickup-1">
 							<div class="pick-text">
 								<p class="pick-title">大人気！盛岡のソールフード<br>
 														「福田パン」
@@ -193,10 +193,10 @@
 								<p class="pick-setumei">岩手県盛岡市にて愛され続けている「福田パン」。コッペパンを専門に扱う、人気店です。そんな「福田パン」あなたも一度試してみませんか？</p>
 								<p class="tanosimi-more"><span>more　<i class="fa fa-angle-double-right" aria-hidden="true"></i></span></p>
 							</div>
-							<div class="pick-img"><img src="img/hukudapan.jpg" alt="福田パン"></div>
+							<div class="pick-img"><div><img src="img/hukudapan.jpg" alt="福田パン"></div></div>
 						</a>
 					</li>
-					<li><a href="#" class="pickup-1">
+					<li><a target="_blank" href="spot-detail.php?id=13" class="pickup-1">
 							<div class="pick-text">
 								<p class="pick-title">衝撃の地酒「タクシードライバー」日本酒ブームの極北を邁進する　　喜久盛酒造
 								</p>
@@ -204,11 +204,11 @@
 								<p class="pick-setumei">喜久盛酒造の創業は1894年（明治27年）。120年以上の伝統ある蔵元ですが、日本酒業界は300年、500年という</p>
 								<p class="tanosimi-more"><span>more　<i class="fa fa-angle-double-right" aria-hidden="true"></i></span></p>
 							</div>
-							<div class="pick-img"><img src="img/kikuzakari1.jpg" alt="喜久盛"></div>
+							<div class="pick-img"><div><img src="img/kikuzakari1.jpg" alt="喜久盛"></div></div>
 						</a>
 					</li>
 				</ul>
-			<p class="itiran"><a href="#">SPOT 一覧　<i class="fa fa-angle-double-right" aria-hidden="true"></i></a></p>
+			<p class="itiran"><a href="spot.php">SPOT 一覧　<i class="fa fa-angle-double-right" aria-hidden="true"></i></a></p>
 		</div>
 	</div>
 	<div class="content con3">
@@ -217,7 +217,7 @@
 		<p class="content-title-2">イベント</p>
 			<ul class="content-list event">
 			<li>
-				<a href="#">
+				<a target="_blank" href="event-detail.php?id=26">
 					<div class="event-img "><img src="img/sisiodori.jpg"></div>
 					<div class="event-text">
 						<p class="event-title">鹿踊り</p>
@@ -228,7 +228,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a target="_blank" href="event-detail.php?id=27">
 					<div class="event-img"><img class="event-img-p"src="img/ayame.jpg"></div>
 					<div class="event-text">
 						<p class="event-title">胆沢城あやめ祭り</p>
@@ -239,7 +239,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a target="_blank" href="event-detail.php?id=25">
 					<div class="event-img"><img class="event-img-p"src="img/sansa.jpg"></div>
 					<div class="event-text">
 						<p class="event-title">盛岡　さんさ祭り</p>
@@ -250,7 +250,7 @@
 				</a>
 			</li>
 			</ul>
-			<p class="itiran"><a href="#">EVENT 一覧　<i class="fa fa-angle-double-right" aria-hidden="true"></i></a></p>
+			<p class="itiran"><a href="event.php">EVENT 一覧　<i class="fa fa-angle-double-right" aria-hidden="true"></i></a></p>
 		</div>
 	</div>
 	<div class="content con4">
@@ -259,7 +259,7 @@
 		<p class="content-title-2">ツアー</p>
 			<ul class="content-list event">
 			<li>
-				<a href="#">
+				<a target="_blank" href="tour-detail.php?id=1">
 					<div class="event-img"><img class="event-img-p" src="img/kenji.jpg"></div>
 					<div class="event-text">
 						<p class="event-title moderu-title">童話の世界へ飛び込もう！宮沢賢治ゆかりの地を巡る</p>
@@ -268,7 +268,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a target="_blank" href="tour-detail.php?id=2">
 					<div class="event-img"><img src="img/taue.jpg"></div>
 					<div class="event-text">
 						<p class="event-title moderu-title">ふれあいと自然を満喫！
@@ -278,7 +278,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a target="_blank" href="tour-detail.php?id=3">
 					<div class="event-img"><img class="event-img-p"src="img/sake.jpg"></div>
 					<div class="event-text">
 						<p class="event-title moderu-title">日本酒作り体験と温泉満喫プラン</p>
@@ -287,7 +287,7 @@
 				</a>
 			</li>
 			</ul>
-				<p class="itiran"><a href="#">TOUR 一覧　<i class="fa fa-angle-double-right" aria-hidden="true"></i></a></p>
+				<p class="itiran"><a href="tour.php">TOUR 一覧　<i class="fa fa-angle-double-right" aria-hidden="true"></i></a></p>
 		</div>
 	</div>
 	<div class="content con6">
@@ -324,33 +324,33 @@
 			</li>
 			</ul>
 		</div>
-	</div>
+	</div><!---
 	<div class="koukoku">
 		<div class="wid">
 		<p>広告</p>
 		<ul class="koukoku1">
-			<li><a href="http://kamaishi-kankou.sakura.ne.jp/"><img src="img/pQ2.gif"></a></li>
-			<li><a href="http://www.tonojikan.jp/"><img src="img/bkG.png"></a></li>
-			<li><a href="http://www.hanamakionsen.co.jp/"><img src="img/y7C.gif"></a></li>
-			<li><a href="http://www.jodo-ph.jp/"><img src="img/KzJ.gif"></a></li>
-			<li><a href="http://www.airinkan.com/"><img src="img/Z.jpg"></a></li>
-			<li><a href="http://www.fujiwaranosato.com/"><img src="img/2Q==.jpg"></a></li>
-			<li><a href="http://www.choeikan.com/"><img src="img/9k=.jpg"></a></li>
-			<li><a href="http://www.hachimantai.jp/"><img src="img/Z-1.jpg"></a></li>
-			<li><a href="http://www.musasibou.com/"><img src="img/Z-2.jpg"></a></li>
-			<li><a href="http://www.wakanagroup.com/"><img src="img/2Q==-1.jpg"></a></li>
+			<li><a target="_blank" href="http://kamaishi-kankou.sakura.ne.jp/"><img src="img/pQ2.gif"></a></li>
+			<li><a target="_blank" href="http://www.tonojikan.jp/"><img src="img/bkG.png"></a></li>
+			<li><a target="_blank" href="http://www.hanamakionsen.co.jp/"><img src="img/y7C.gif"></a></li>
+			<li><a target="_blank" href="http://www.jodo-ph.jp/"><img src="img/KzJ.gif"></a></li>
+			<li><a target="_blank" href="http://www.airinkan.com/"><img src="img/Z.jpg"></a></li>
+			<li><a target="_blank" href="http://www.fujiwaranosato.com/"><img src="img/2Q==.jpg"></a></li>
+			<li><a target="_blank" href="http://www.choeikan.com/"><img src="img/9k=.jpg"></a></li>
+			<li><a target="_blank" href="http://www.hachimantai.jp/"><img src="img/Z-1.jpg"></a></li>
+			<li><a target="_blank" href="http://www.musasibou.com/"><img src="img/Z-2.jpg"></a></li>
+			<li><a target="_blank" href="http://www.wakanagroup.com/"><img src="img/2Q==-1.jpg"></a></li>
 
 		</ul>
 		<ul class="koukoku2">
-			<li><a href="http://www.iwate2016.jp"><img src="img/lj4.gif"></a></li>
-			<li><a href="http://plaza.rakuten.co.jp/machi03iwate/"><img src="img/Z-3.jpg"></a></li>
-			<li><a href="http://comiciwate.jp/"><img src="img/2Q==-2.jpg"></a></li>
+			<li><a target="_blank" href="http://www.iwate2016.jp"><img src="img/lj4.gif"></a></li>
+			<li><a target="_blank" href="http://plaza.rakuten.co.jp/machi03iwate/"><img src="img/Z-3.jpg"></a></li>
+			<li><a target="_blank" href="http://comiciwate.jp/"><img src="img/2Q==-2.jpg"></a></li>
 
 		</ul>
 	</div>	
 
 	
-</div>
+</div>-->
 <p><a href="#" class="shousai-back" style="margin-top:0">ページのTOPに戻る</a></p>
 
 <footer>

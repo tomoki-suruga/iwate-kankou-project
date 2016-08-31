@@ -1,8 +1,6 @@
 
 <?php
-$db = mysqli_connect('localhost','root','','tomonavi') or
-die(mysql_connect_error());
-mysqli_set_charset($db,'utf8');
+require('dbconnect.php');
 	if(empty($_REQUEST['id'])){
 		header('Location: index.php');
 		exit();
@@ -39,7 +37,7 @@ mysqli_set_charset($db,'utf8');
 		<div class="navi">
 
 		<div class="wid-1">		<button type="button" id="menubtn"><i class="fa fa-bars" aria-hidden="true"></i><p>menu</p></button>
-		<a class="tomo" href="#"><h1>TOMOnavi</h1></a>
+		<a class="tomo" href="index.php"><h1>TOMOnavi</h1></a>
 
 		</div>
 		</div>

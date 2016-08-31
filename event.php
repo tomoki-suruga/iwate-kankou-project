@@ -1,8 +1,7 @@
 
 <?php
-$db = mysqli_connect('localhost','root','','tomonavi') or
-die(mysql_connect_error());
-mysqli_set_charset($db,'utf8');
+require('dbconnect.php');
+
 $recodSet = mysqli_query($db,'SELECT * FROM event');
 ?>
 
@@ -29,7 +28,7 @@ $recodSet = mysqli_query($db,'SELECT * FROM event');
 		<div class="navi">
 
 		<div class="wid-1">		<button type="button" id="menubtn"><i class="fa fa-bars" aria-hidden="true"></i><p>menu</p></button>
-		<a class="tomo" href="#"><h1>TOMOnavi</h1></a>
+		<a class="tomo" href="index.php"><h1>TOMOnavi</h1></a>
 
 		</div>
 		</div>
@@ -80,7 +79,7 @@ $recodSet = mysqli_query($db,'SELECT * FROM event');
 		<?php while($date = mysqli_fetch_assoc($recodSet)){ ?>
 			<li class="<?php echo $date['class'] ?> event-a">
 				
-				<a href="event-detail.php?id=<?php echo $date['id'] ?>">
+				<a target="_blank" href="event-detail.php?id=<?php echo $date['id'] ?>">
 					<img src="img/<?php echo $date['picture'] ?>">
 					<div class="event-b">
 						<p class="cat-title"><?php echo $date['name'] ?></p>

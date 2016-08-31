@@ -1,8 +1,6 @@
 
 <?php
-$db = mysqli_connect('localhost','root','root','tomonavi') or
-die(mysql_connect_error());
-mysqli_set_charset($db,'utf8');
+require('dbconnect.php');
 $recodSet = mysqli_query($db,'SELECT * FROM spot');
 ?>
 
